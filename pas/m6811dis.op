@@ -1,0 +1,309 @@
+1 0 0 0 test
+1 1 0 0 nop
+1 2 0 0 idiv
+1 3 0 0 fdiv
+1 4 0 0 lsrd
+1 5 0 0 lsld
+1 6 0 0 tap
+1 7 0 0 tpa
+1 8 0 0 inx
+1 9 0 0 dex
+1 10 0 0 clv
+1 11 0 0 sev
+1 12 0 0 clc
+1 13 0 0 sec
+1 14 0 0 cli
+1 15 0 0 sei
+1 16 0 0 sba
+1 17 0 0 cba
+1 18 115 38 brset
+1 19 115 38 brclr
+1 20 7 2 bset
+1 21 7 2 bclr
+1 22 0 0 tab
+1 23 0 0 tba
+2 24 8 0 0 iny
+2 24 9 0 0 dey
+2 24 28 9 0 bset
+2 24 29 9 0 bclr
+2 24 30 147 6 brset
+2 24 31 147 6 brclr
+2 24 48 0 0 tsy
+2 24 53 0 0 tys
+2 24 56 0 0 puly
+2 24 58 0 0 aby
+2 24 60 0 0 pshy
+2 24 96 11 0 neg
+2 24 99 11 0 com
+2 24 100 11 0 lsr
+2 24 102 11 0 ror
+2 24 103 11 0 asr
+2 24 104 11 0 lsl
+2 24 105 11 0 rol
+2 24 106 11 0 dec
+2 24 108 11 0 inc
+2 24 109 11 0 tst
+2 24 110 11 5 jmp
+2 24 111 11 0 clr
+2 24 140 6 0 cpy
+2 24 143 0 0 xgdy
+2 24 156 1 2 cpy
+2 24 160 11 0 suba
+2 24 161 11 0 cmpa
+2 24 162 11 0 sbca
+2 24 163 11 0 subd
+2 24 164 11 0 anda
+2 24 165 11 0 bita
+2 24 166 11 0 ldaa
+2 24 167 11 0 staa
+2 24 168 11 0 eora
+2 24 169 11 0 adca
+2 24 170 11 0 oraa
+2 24 171 11 0 adda
+2 24 172 11 0 cpy
+2 24 173 11 4 jsr
+2 24 174 11 0 lds
+2 24 175 11 0 sts
+2 24 188 2 2 cpy
+2 24 206 6 0 ldy
+2 24 222 1 2 ldy
+2 24 223 1 2 sty
+2 24 224 11 0 subb
+2 24 225 11 0 cmpb
+2 24 226 11 0 sbcb
+2 24 227 11 0 addd
+2 24 228 11 0 andb
+2 24 229 11 0 bitb
+2 24 230 11 0 ldab
+2 24 231 11 0 stab
+2 24 232 11 0 eorb
+2 24 233 11 0 adcb
+2 24 234 11 0 orab
+2 24 235 11 0 addb
+2 24 236 11 0 ldd
+2 24 237 11 0 std
+2 24 238 11 0 ldy
+2 24 239 11 0 sty
+2 24 254 2 2 ldy
+2 24 255 2 2 sty
+1 25 0 0 daa
+2 26 131 6 0 cpd
+2 26 147 1 2 cpd
+2 26 163 10 0 cpd
+2 26 172 10 0 cpy
+2 26 179 2 2 cpd
+2 26 238 10 0 ldy
+2 26 239 10 0 sty
+1 27 0 0 aba
+1 28 8 0 bset
+1 29 8 0 bclr
+1 30 131 6 brset
+1 31 131 6 brclr
+1 32 3 7 bra
+1 33 3 6 brn
+1 34 3 6 bhi
+1 35 3 6 bls
+1 36 3 6 bcc
+1 37 3 6 bcs
+1 38 3 6 bne
+1 39 3 6 beq
+1 40 3 6 bvc
+1 41 3 6 bvs
+1 42 3 6 bpl
+1 43 3 6 bmi
+1 44 3 6 bge
+1 45 3 6 blt
+1 46 3 6 bgt
+1 47 3 6 ble
+1 48 0 0 tsx
+1 49 0 0 ins
+1 50 0 0 pula
+1 51 0 0 pulb
+1 52 0 0 des
+1 53 0 0 txs
+1 54 0 0 psha
+1 55 0 0 pshb
+1 56 0 0 pulx
+1 57 0 1 rts
+1 58 0 0 abx
+1 59 0 1 rti
+1 60 0 0 pshx
+1 61 0 0 mul
+1 62 0 0 wai
+1 63 0 0 swi
+1 64 0 0 nega
+1 67 0 0 coma
+1 68 0 0 lsra
+1 70 0 0 rora
+1 71 0 0 asra
+1 72 0 0 lsla
+1 73 0 0 rola
+1 74 0 0 deca
+1 76 0 0 inca
+1 77 0 0 tsta
+1 79 0 0 clra
+1 80 0 0 negb
+1 83 0 0 comb
+1 84 0 0 lsrb
+1 86 0 0 rorb
+1 87 0 0 asrb
+1 88 0 0 lslb
+1 89 0 0 rolb
+1 90 0 0 decb
+1 92 0 0 incb
+1 93 0 0 tstb
+1 95 0 0 clrb
+1 96 10 0 neg
+1 99 10 0 com
+1 100 10 0 lsr
+1 102 10 0 ror
+1 103 10 0 asr
+1 104 10 0 lsl
+1 105 10 0 rol
+1 106 10 0 dec
+1 108 10 0 inc
+1 109 10 0 tst
+1 110 10 5 jmp
+1 111 10 0 clr
+1 112 2 2 neg
+1 115 2 2 com
+1 116 2 2 lsr
+1 118 2 2 ror
+1 119 2 2 asr
+1 120 2 2 lsl
+1 121 2 2 rol
+1 122 2 2 dec
+1 124 2 2 inc
+1 125 2 2 tst
+1 126 2 7 jmp
+1 127 2 2 clr
+1 128 5 0 suba
+1 129 5 0 cmpa
+1 130 5 0 sbca
+1 131 6 0 subd
+1 132 5 0 anda
+1 133 5 0 bita
+1 134 5 0 ldaa
+1 136 5 0 eora
+1 137 5 0 adca
+1 138 5 0 oraa
+1 139 5 0 adda
+1 140 6 0 cpx
+1 141 3 6 bsr
+1 142 6 0 lds
+1 143 0 0 xgdx
+1 144 1 2 suba
+1 145 1 2 cmpa
+1 146 1 2 sbca
+1 147 1 2 subd
+1 148 1 2 anda
+1 149 1 2 bita
+1 150 1 2 ldaa
+1 151 1 2 staa
+1 152 1 2 eora
+1 153 1 2 adca
+1 154 1 2 oraa
+1 155 1 2 adda
+1 156 1 2 cpx
+1 157 1 6 jsr
+1 158 1 2 lds
+1 159 1 2 sts
+1 160 10 0 suba
+1 161 10 0 cmpa
+1 162 10 0 sbca
+1 163 10 0 subd
+1 164 10 0 anda
+1 165 10 0 bita
+1 166 10 0 ldaa
+1 167 10 0 staa
+1 168 10 0 eora
+1 169 10 0 adca
+1 170 10 0 oraa
+1 171 10 0 adda
+1 172 10 0 cpx
+1 173 10 4 jsr
+1 174 10 0 lds
+1 175 10 0 sts
+1 176 2 2 suba
+1 177 2 2 cmpa
+1 178 2 2 sbca
+1 179 2 2 subd
+1 180 2 2 anda
+1 181 2 2 bita
+1 182 2 2 ldaa
+1 183 2 2 staa
+1 184 2 2 eora
+1 185 2 2 adca
+1 186 2 2 oraa
+1 187 2 2 adda
+1 188 2 2 cpx
+1 189 2 6 jsr
+1 190 2 2 lds
+1 191 2 2 sts
+1 192 5 0 subb
+1 193 5 0 cmpb
+1 194 5 0 sbcb
+1 195 6 0 addd
+1 196 5 0 andb
+1 197 5 0 bitb
+1 198 5 0 ldab
+1 200 5 0 eorb
+1 201 5 0 adcb
+1 202 5 0 orab
+1 203 5 0 addb
+1 204 6 0 ldd
+2 205 163 11 0 cpd
+2 205 172 11 0 cpx
+2 205 238 11 0 ldx
+2 205 239 11 0 stx
+1 206 6 0 ldx
+1 207 0 0 stop
+1 208 1 2 subb
+1 209 1 2 cmpb
+1 210 1 2 sbcb
+1 211 1 2 addd
+1 212 1 2 andb
+1 213 1 2 bitb
+1 214 1 2 ldab
+1 215 1 2 stab
+1 216 1 2 eorb
+1 217 1 2 adcb
+1 218 1 2 orab
+1 219 1 2 addb
+1 220 1 2 ldd
+1 221 1 2 std
+1 222 1 2 ldx
+1 223 1 2 stx
+1 224 10 0 subb
+1 225 10 0 cmpb
+1 226 10 0 sbcb
+1 227 10 0 addd
+1 228 10 0 andb
+1 229 10 0 bitb
+1 230 10 0 ldab
+1 231 10 0 stab
+1 232 10 0 eorb
+1 233 10 0 adcb
+1 234 10 0 orab
+1 235 10 0 addb
+1 236 10 0 ldd
+1 237 10 0 std
+1 238 10 0 ldx
+1 239 10 0 stx
+1 240 2 2 subb
+1 241 2 2 cmpb
+1 242 2 2 sbcb
+1 243 2 2 addd
+1 244 2 2 andb
+1 245 2 2 bitb
+1 246 2 2 ldab
+1 247 2 2 stab
+1 248 2 2 eorb
+1 249 2 2 adcb
+1 250 2 2 orab
+1 251 2 2 addb
+1 252 2 2 ldd
+1 253 2 2 std
+1 254 2 2 ldx
+1 255 2 2 stx
+0

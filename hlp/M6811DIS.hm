@@ -1,0 +1,25 @@
+// MAKEHELP.BAT generated Help Map file.  Used by M6811DIS.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_DFC_SETTINGS                        0x18003
+HID_SETTINGS                            0x18004
+HID_FILE_CONVERT                        0x18005
+HID_HEXEDIT_PROPERTIES                  0x18008
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_DSMCTLTYPE                         0x20081
+HIDR_SRCTYPE                            0x20082
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_M6811DIS_FORM                      0x20065
+HIDD_SS_DFC_SETTINGS                    0x2006B
+HIDD_NEWFILE_INTRO                      0x2006D
+HIDD_NEWFILE_TYPE                       0x2006E
+HIDD_NEWFILE_SETTINGS                   0x2006F
+HIDD_SRCDOC_FORM                        0x20070
+ 
+// Frame Controls (IDW_*) 

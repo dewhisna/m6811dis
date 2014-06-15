@@ -1,0 +1,730 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\M6811DIS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\M6811DIS.ico"
+IDR_DSMCTLTYPE          ICON    DISCARDABLE     "res\\CtlDoc.ico"
+IDR_SRCTYPE             ICON    DISCARDABLE     "res\\SrcDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+IDB_6811CHIP            BITMAP  DISCARDABLE     "res\\6811chip.bmp"
+IDB_LOGIPROB            BITMAP  DISCARDABLE     "res\\Logiprob.bmp"
+IDB_WIZARD1             BITMAP  DISCARDABLE     "res\\wizard1.bmp"
+IDB_WIZARD2             BITMAP  DISCARDABLE     "res\\Wizard2.bmp"
+IDB_WIZARD3             BITMAP  DISCARDABLE     "res\\Wizard3.bmp"
+IDB_KATHY               BITMAP  DISCARDABLE     "res\\Kathy.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Settings...",                ID_SETTINGS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About M6811DIS...",          ID_APP_ABOUT
+    END
+END
+
+IDR_DSMCTLTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Settings...",                ID_SETTINGS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About M6811DIS...",          ID_APP_ABOUT
+    END
+END
+
+IDR_SRCTYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "&Convert To...",              ID_FILE_CONVERT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Hex Editor Properties...",   ID_HEXEDIT_PROPERTIES
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Settings...",                ID_SETTINGS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About M6811DIS...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 195, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About M6811DIS"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "M6811 Code-Seeking Disassembler",IDC_STATIC,42,10,109,8,
+                    SS_NOPREFIX
+    CTEXT           "LEGALCOPYRIGHT",IDC_COPYRIGHT,10,36,175,8
+    DEFPUSHBUTTON   "OK",IDOK,82,201,32,14,WS_GROUP
+    CTEXT           "VERSION#",IDC_VERSION,38,23,119,8
+    RTEXT           "Free Memory:",IDC_STATIC,37,158,44,8
+    RTEXT           "Disk Space:",IDC_STATIC,37,175,44,8
+    EDITTEXT        IDC_PHYSICAL_MEM,82,155,76,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_DISK_SPACE,82,172,76,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "System Info:",IDC_STATIC,33,143,129,48,BS_CENTER
+    CONTROL         160,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE,35,53,125,80
+END
+
+IDD_M6811DIS_FORM DIALOG DISCARDABLE  0, 0, 327, 288
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Source &Files:",IDC_STATIC,7,7,40,8
+    CONTROL         "List1",IDC_SOURCE_FILE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,17,256,80
+    PUSHBUTTON      "&View File...",IDC_VIEW_SOURCE,270,17,50,14
+    PUSHBUTTON      "&Edit Settings...",IDC_EDIT_SOURCE,270,39,50,14
+    PUSHBUTTON      "&Add...",IDC_ADD_SOURCE,270,61,50,14
+    PUSHBUTTON      "&Remove",IDC_REMOVE_SOURCE,270,83,50,14
+    GROUPBOX        "Output Options:",IDC_STATIC,7,223,69,58,BS_CENTER
+    CONTROL         "&Opcodes",IDC_OPCODES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,236,44,10
+    CONTROL         "A&ddresses",IDC_ADDRESSES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,249,49,10
+    CONTROL         "AS&CII",IDC_ASCII,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    21,262,33,10
+    GROUPBOX        "Code-See&king Options",IDC_STATIC,7,103,137,116,
+                    BS_CENTER
+    CONTROL         "E&nable for ALL addresses",IDC_CODESEEK_ENABLED,"Button",
+                    BS_AUTORADIOBUTTON,17,113,94,10
+    CONTROL         "Disa&ble for ALL addresses",IDC_CODESEEK_DISABLED,
+                    "Button",BS_AUTORADIOBUTTON,17,125,96,10
+    CONTROL         "Disab&le for the Following Ranges:",
+                    IDC_CODESEEK_SELECTIVE,"Button",BS_AUTORADIOBUTTON,17,
+                    137,116,10
+    CONTROL         "List2",IDC_CODESEEK_RANGE_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,14,
+                    147,123,69
+    LTEXT           "&Project Files:",IDC_STATIC,151,103,40,8
+    CONTROL         "Tree1",IDC_PROJECT_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_BORDER | WS_TABSTOP,151,115,169,104
+END
+
+IDD_SS_DFC_SETTINGS DIALOG DISCARDABLE  0, 0, 300, 150
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Data File Converters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Loaded File Converters:",IDC_STATIC,7,7,73,8
+    CONTROL         "List2",IDC_DFC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,19,226,123
+    PUSHBUTTON      "&Load...",IDC_LOAD,243,19,50,14
+    PUSHBUTTON      "&Unload",IDC_UNLOAD,243,40,50,14
+END
+
+IDD_NEWFILE_INTRO DIALOG DISCARDABLE  0, 0, 250, 166
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "New File Creation Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Control File",IDC_NFTYPE_CONTROL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,166,66,50,10
+    CONTROL         "&Data File",IDC_NFTYPE_DATA,"Button",BS_AUTORADIOBUTTON,
+                    166,86,43,10
+    GROUPBOX        "Select Kind of File to Create",IDC_STATIC,134,48,109,69,
+                    BS_CENTER
+    CONTROL         163,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE,7,7,120,151
+END
+
+IDD_NEWFILE_TYPE DIALOG DISCARDABLE  0, 0, 250, 166
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "New Data File Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select a File &Type:",IDC_STATIC,7,7,57,8
+    LISTBOX         IDC_FILE_TYPE_LIST,7,17,108,141,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Add to Control File:",IDC_CF_FLAG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,120,17,72,10
+    COMBOBOX        IDC_CF_LIST,120,27,123,44,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Filename:",IDC_STATIC,120,47,31,8
+    EDITTEXT        IDC_FILENAME,120,57,123,14,ES_AUTOHSCROLL
+    LTEXT           "&Location:",IDC_STATIC,120,84,28,8
+    EDITTEXT        IDC_LOCATION,120,93,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&...",IDC_SELECT_DIRECTORY,225,93,18,14
+    LTEXT           "For additional types, use TOOLS->",IDC_STATIC,120,120,
+                    104,8
+    LTEXT           "SETTINGS->DATA FILE CONVERTERS",IDC_STATIC,120,128,123,
+                    8
+    LTEXT           "to register new types.",IDC_STATIC,120,136,64,8
+END
+
+IDD_NEWFILE_SETTINGS DIALOG DISCARDABLE  0, 0, 250, 166
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "New Control File Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Control &Filename:",IDC_STATIC,7,7,53,8
+    EDITTEXT        IDC_FILENAME,7,17,122,14,ES_AUTOHSCROLL
+    LTEXT           "&Location:",IDC_STATIC,7,43,28,8
+    EDITTEXT        IDC_LOCATION,7,52,103,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&...",IDC_SELECT_DIRECTORY,111,52,18,14
+END
+
+IDD_SRCDOC_FORM DIALOG DISCARDABLE  0, 0, 300, 250
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_HEXEDIT,"{062E8E83-83C7-11D1-858F-00600828300C}",
+                    NOT WS_VISIBLE | WS_TABSTOP,10,10,163,147
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Motorola 68HC11 Code-Seeking Disassembler\0"
+            VALUE "CompanyName", "Dewtronics\0"
+            VALUE "FileDescription", "Motorola 68HC11 Code-Seeking Disassembler\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "M6811DIS\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998  Donald Whisnant\0"
+            VALUE "OriginalFilename", "M6811DIS.EXE\0"
+            VALUE "ProductName", "Motorola 68HC11 Code-Seeking Disassembler\0"
+            VALUE "ProductVersion", "2, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_M6811DIS_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_SS_DFC_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_NEWFILE_INTRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_NEWFILE_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_NEWFILE_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_SRCDOC_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SRCDOC_FORM DLGINIT
+BEGIN
+    IDC_HEXEDIT, 0x376, 206, 0
+0x001d, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0038, 0x0020, 0x0044, 0x0065, 0x0077, 0x0074, 0x0072, 0x006f, 
+0x006e, 0x0069, 0x0063, 0x0073, 0x0000, 0x0001, 0x1af4, 0x0000, 0x184f, 
+0x0000, 0x004d, 0x0000, 0x0000, 0x0000, 0xffff, 0x00ff, 0x0300, 0xe352, 
+0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0000, 0x9000, 
+0xe001, 0x01a5, 0x0800, 0x6946, 0x6578, 0x7364, 0x7379, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x0001, 0x0000, 
+0x0190, 0xa5e0, 0x0001, 0x4608, 0x7869, 0x6465, 0x7973, 0x0073, 0x0000, 
+0xff00, 0xffff, 0xff00, 0x0000, 0xff00, 0xffff, 0xff00, 0xffff, 0x0000, 
+0xff00, 0xff00, 0x00ff, 0x0000, 0xff00, 0x8000, 0x8080, 0xff00, 0xffff, 
+0x0000, 0x0100, 0x0001, 0x0010, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "M68HC11 Disassembler"
+    IDR_DSMCTLTYPE          "\nCONTROL\nControl File\nDisassembly Control Files (*.ctl)\n.ctl\nDisassemblyControlFile.Document\nDisassembly Control File"
+    IDR_SRCTYPE             "\nDATAFILE\nData File\nSource Data Files (*.*)\n\nDataFile.Document\nData File"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "M6811DIS"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CG_IDS_PHYSICAL_MEM     "%lu KB"
+    CG_IDS_DISK_SPACE       "%lu KB Free on %c:"
+    CG_IDS_DISK_SPACE_UNAVAIL "Unavailable"
+    IDS_SSSHT_CAPTION       "System Settings"
+    IDS_DFC_LOAD_ERROR      "Error loading %1"
+    IDS_NFSHT_CAPTION       "New File Wizard"
+    IDS_FILTER_DFCFILES     "Data File Converters (*.dfc)|*.dfc|"
+    IDS_FILTER_DLLFILES     "Dynamic Link Libraries (*.dll)|*.dll|"
+    IDS_FILTER_ALLFILES     "All Files (*.*)|*.*|"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DFC_SETTINGS         "Edit settings for Data File Converter modules\nDFC Settings"
+    ID_SETTINGS             "Edit program settings\nProgram Settings"
+    ID_FILE_CONVERT         "Create a new document from the active document and convert file types\nConvert To"
+    ID_HEXEDIT_PROPERTIES   "Edit the properties of the Hex Edit Control\nHex Edit Properties"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DFC_ALREADY_LOADED_ERROR "The DFC ""%1"" is already loaded!"
+    IDS_DFC_ERR_OUT_OF_RANE "%1 Failed with attempted I/O Out of Specified Memory Range"
+    IDS_DFC_ERR_MAPPING_OVERLAP "Memory Mapping Overlap Error"
+    IDS_DFC_ERR_CHECKSUM    "%1 Failed with File Checksum Error"
+    IDS_DFC_ERR_UNEXPECTED_EOF "Unexpected End Of File on %1"
+    IDS_DFC_ERR_OVERFLOW    "DFC Overflow on %1"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\M6811DIS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
