@@ -1,0 +1,18 @@
+//
+// FUNCVIEW.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+// $Log: FuncView.rc2,v $
+// Revision 1.1  2003/09/13 05:45:53  dewhisna
+// Initial Revision
+//
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+/////////////////////////////////////////////////////////////////////////////
