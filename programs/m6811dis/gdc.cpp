@@ -1647,7 +1647,7 @@ bool CDisassembler::Pass3(std::ostream& /* outFile */, std::ostream *msgFile, st
 	bool bInFunc;
 	bool bLastFlag;
 	bool bBranchOutFlag;
-	unsigned int nFuncAddr;
+	unsigned int nFuncAddr = 0;
 	unsigned int nSavedPC;
 	TMemRange *pMemRange;
 	bool bTempFlag;

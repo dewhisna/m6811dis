@@ -293,12 +293,12 @@ int TDFC_SFile::WriteDataFile(std::ostream *aFile, TMemRange *aRange, unsigned l
    char           Buff[256];        // Line Buffer
    unsigned int   SBA;              // Segment Base Address
    unsigned int   NBytes;           // Number of bytes supposed to be on line
-   unsigned int   OffsetAddr;       // Offset Address read on line
+   unsigned int   OffsetAddr = 0;   // Offset Address read on line
    unsigned int   i;                // Loop counter
    unsigned int   chksum;           // Running Checksum
    unsigned long  BytesLeft;        // Remaining number of bytes to check/write
    unsigned long  CurrAddr;         // Current Logical Memory Address
-   unsigned long  RealAddr;         // Current Written Address equivalent
+   unsigned long  RealAddr = 0;     // Current Written Address equivalent
    unsigned int   LowestOffset;     // Lowest Load offset for the file
    unsigned int   LowestFound;      // Flag for finding lowest offset
    unsigned int   TempByte;         // Temp byte used for calculation

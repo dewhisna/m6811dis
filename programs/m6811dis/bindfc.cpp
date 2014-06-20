@@ -109,7 +109,7 @@ int TDFC_Binary::WriteDataFile(std::ostream *aFile, TMemRange *aRange, unsigned 
    int            RetVal;           // Return Value
    unsigned long  BytesLeft;        // Remaining number of bytes to check/write
    unsigned long  CurrAddr;         // Current Logical Memory Address
-   unsigned long  RealAddr;         // Current Written Address equivalent
+   unsigned long  RealAddr = 0;     // Current Written Address equivalent
    int            NeedNewOffset;
 
 
