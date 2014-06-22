@@ -1,0 +1,368 @@
+M6811 Disassembler V2.00 -- GDC V2.00
+Copyright(c)1996-2014 by Donna Whisnant
+
+Reading and Parsing Control File: "base.ctl"...
+Loading "base.bin" at offset 0xC000 using binary library...
+
+        1 Source File: base.bin
+
+        Disassembly Output File: base.dis
+
+        Functions Output File: base.fnc
+
+        Memory Mappings:
+            ROM Memory Map:
+                0xC000 - 0xFFFF  (Size: 0x4000)
+            RAM Memory Map:
+                0xB000 - 0xB0FF  (Size: 0x0100)
+             IO Memory Map:
+                0x103D - 0x103D  (Size: 0x0001)
+                0xA000 - 0xA03F  (Size: 0x0040)
+
+        20 Entry Points:
+                0xC0AF
+                0xDAED
+                0xDB55
+                0xDBCA
+                0xDC3A
+                0xDCCC
+                0xDD35
+                0xDDB3
+                0xDE5F
+                0xDECC
+                0xDFC2
+                0xEB78
+                0xF38D
+                0xF396
+                0xF508
+                0xF5FB
+                0xF751
+                0xF875
+                0xF90B
+                0xF92C
+
+        3 Exit Functions Defined:
+                0xF370
+                0xF92C
+                0xF948
+
+        78 Unique Labels Defined:
+                0x103D=INITREG
+                0xA000=PORTA
+                0xA001=DDRA
+                0xA002=PIOC
+                0xA003=PORTC
+                0xA004=PORTB
+                0xA005=PORTCL
+                0xA006=DDRB
+                0xA007=DDRC
+                0xA008=PORTD
+                0xA009=DDRD
+                0xA00A=PORTE
+                0xA00B=CFORC
+                0xA00C=OC1M
+                0xA00D=OC1D
+                0xA00E=TCNT
+                0xA010=TIC1
+                0xA012=TIC2
+                0xA014=TIC3
+                0xA016=TOC1
+                0xA018=TOC2
+                0xA01A=TOC3
+                0xA01C=TOC4
+                0xA01E=TOC5
+                0xA020=TCTL1
+                0xA021=TCTL2
+                0xA022=TMSK1
+                0xA023=TFLG1
+                0xA024=TMSK2
+                0xA025=TFLG2
+                0xA026=PACTL
+                0xA027=PACNT
+                0xA028=SPCR
+                0xA029=SPSR
+                0xA02A=SPDAT
+                0xA02B=BAUD
+                0xA02C=SCCR1
+                0xA02D=SCCR2
+                0xA02E=SCSR
+                0xA02F=SCDAT
+                0xA030=ADCTL
+                0xA031=ADR1
+                0xA032=ADR2
+                0xA033=ADR3
+                0xA034=ADR4
+                0xA035=BPROT
+                0xA039=OPTION
+                0xA03A=COPRST
+                0xA03B=PPROG
+                0xA03C=HPRIO
+                0xA03D=INIT
+                0xA03E=TEST1
+                0xA03F=CONFIG
+                0xF356=X_CALL_L09
+                0xF370=X_RET_L09
+                0xF92C=S_SWITCH_L06
+                0xF948=VI_SWITCH_L06
+                0xFFD6=scivect
+                0xFFD8=spivect
+                0xFFDA=paievect
+                0xFFDC=paovect
+                0xFFDE=tovfvect
+                0xFFE0=ti4o5vect
+                0xFFE2=to4vect
+                0xFFE4=to3vect
+                0xFFE6=to2vect
+                0xFFE8=to1vect
+                0xFFEA=ti3vect
+                0xFFEC=ti2vect
+                0xFFEE=ti1vect
+                0xFFF0=rtivect
+                0xFFF2=irqvect
+                0xFFF4=xirqvect
+                0xFFF6=swivect
+                0xFFF8=ilopvect
+                0xFFFA=copvect
+                0xFFFC=cmonvect
+                0xFFFE=rstvect
+
+Writing program counter addresses to disassembly file.
+
+Compiling Indirect Code (branch) Table as specified in Control File...
+        152 Indirect Code Vectors:
+                [0xDAC3] -> 0xDB28
+                [0xDAC7] -> 0xDB20
+                [0xDACB] -> 0xDB18
+                [0xDACF] -> 0xDB10
+                [0xDAD3] -> 0xDB08
+                [0xDAD7] -> 0xDAFF
+                [0xDADB] -> 0xDAF6
+                [0xDADF] -> 0xDAED
+                [0xDAE3] -> 0xDB30
+                [0xDAE7] -> 0xDB89
+                [0xDB37] -> 0xDB75
+                [0xDB3B] -> 0xDB7D
+                [0xDB3F] -> 0xDB65
+                [0xDB43] -> 0xDB6D
+                [0xDB47] -> 0xDB55
+                [0xDB4B] -> 0xDB5D
+                [0xDB4F] -> 0xDB85
+                [0xDBA0] -> 0xDC09
+                [0xDBA4] -> 0xDC00
+                [0xDBA8] -> 0xDBF7
+                [0xDBAC] -> 0xDBEE
+                [0xDBB0] -> 0xDBE5
+                [0xDBB4] -> 0xDBDC
+                [0xDBB8] -> 0xDBD3
+                [0xDBBC] -> 0xDBCA
+                [0xDBC0] -> 0xDC11
+                [0xDBC4] -> 0xDC8B
+                [0xDC18] -> 0xDC62
+                [0xDC1C] -> 0xDC5A
+                [0xDC20] -> 0xDC6E
+                [0xDC24] -> 0xDC4A
+                [0xDC28] -> 0xDC52
+                [0xDC2C] -> 0xDC3A
+                [0xDC30] -> 0xDC42
+                [0xDC34] -> 0xDC87
+                [0xDCA2] -> 0xDD08
+                [0xDCA6] -> 0xDD00
+                [0xDCAA] -> 0xDCF8
+                [0xDCAE] -> 0xDCF0
+                [0xDCB2] -> 0xDCE7
+                [0xDCB6] -> 0xDCDE
+                [0xDCBA] -> 0xDCD5
+                [0xDCBE] -> 0xDCCC
+                [0xDCC2] -> 0xDD10
+                [0xDCC6] -> 0xDD72
+                [0xDD17] -> 0xDD5A
+                [0xDD1B] -> 0xDD66
+                [0xDD1F] -> 0xDD45
+                [0xDD23] -> 0xDD4D
+                [0xDD27] -> 0xDD35
+                [0xDD2B] -> 0xDD3D
+                [0xDD2F] -> 0xDD6E
+                [0xDD89] -> 0xDDEB
+                [0xDD8D] -> 0xDDE3
+                [0xDD91] -> 0xDDDB
+                [0xDD95] -> 0xDDD3
+                [0xDD99] -> 0xDDCB
+                [0xDD9D] -> 0xDDC3
+                [0xDDA1] -> 0xDDBB
+                [0xDDA5] -> 0xDDB3
+                [0xDDA9] -> 0xDDF3
+                [0xDDAD] -> 0xDE1E
+                [0xDE35] -> 0xDE9E
+                [0xDE39] -> 0xDE95
+                [0xDE3D] -> 0xDE8C
+                [0xDE41] -> 0xDE83
+                [0xDE45] -> 0xDE7A
+                [0xDE49] -> 0xDE71
+                [0xDE4D] -> 0xDE68
+                [0xDE51] -> 0xDE5F
+                [0xDE55] -> 0xDEA7
+                [0xDE59] -> 0xDF43
+                [0xDEAE] -> 0xDF2F
+                [0xDEB2] -> 0xDF37
+                [0xDEB6] -> 0xDEF4
+                [0xDEBA] -> 0xDF02
+                [0xDEBE] -> 0xDECC
+                [0xDEC2] -> 0xDED4
+                [0xDEC6] -> 0xDF3F
+                [0xDF84] -> 0xE2A6
+                [0xDF88] -> 0xE135
+                [0xDF8C] -> 0xE06D
+                [0xDF90] -> 0xE10D
+                [0xDF94] -> 0xE0E1
+                [0xDF98] -> 0xDFC2
+                [0xDF9C] -> 0xDFFA
+                [0xDFA0] -> 0xE0B1
+                [0xDFA4] -> 0xE0C9
+                [0xDFA8] -> 0xE093
+                [0xDFAC] -> 0xE018
+                [0xDFB0] -> 0xE021
+                [0xDFB4] -> 0xE12C
+                [0xDFB8] -> 0xE03F
+                [0xDFBC] -> 0xE2FB
+                [0xEB5A] -> 0xEB87
+                [0xEB5E] -> 0xEB78
+                [0xEB62] -> 0xEB96
+                [0xEB66] -> 0xEBA5
+                [0xEB6A] -> 0xEBB4
+                [0xEB6E] -> 0xEBC3
+                [0xEB72] -> 0xEBD7
+                [0xFA78] -> 0xC0BA
+                [0xFA7C] -> 0xC14A
+                [0xFA80] -> 0xC209
+                [0xFA84] -> 0xC54F
+                [0xFA88] -> 0xC6B2
+                [0xFA8C] -> 0xC78D
+                [0xFA90] -> 0xF189
+                [0xFAA0] -> 0xC9F2
+                [0xFAA4] -> 0xCA6A
+                [0xFAA8] -> 0xCAF9
+                [0xFAAC] -> 0xCB4E
+                [0xFAB0] -> 0xCBF8
+                [0xFAB4] -> 0xCE2A
+                [0xFAB8] -> 0xCE55
+                [0xFABC] -> 0xCEDD
+                [0xFAC0] -> 0xCF35
+                [0xFAC4] -> 0xD0D1
+                [0xFB50] -> 0xF23F
+                [0xFB74] -> 0xD91D
+                [0xFB78] -> 0xDA87
+                [0xFB7C] -> 0xDF58
+                [0xFB80] -> 0xDF7D
+                [0xFBC0] -> 0xE301
+                [0xFBC4] -> 0xE3D8
+                [0xFBC8] -> 0xE572
+                [0xFBCC] -> 0xE8CC
+                [0xFBD0] -> 0xEA95
+                [0xFBD4] -> 0xEAFD
+                [0xFBD8] -> 0xEB53
+                [0xFBDC] -> 0xEC01
+                [0xFBE0] -> 0xEC4E
+                [0xFBE4] -> 0xECC6
+                [0xFBE8] -> 0xECE9
+                [0xFBEC] -> 0xED17
+                [0xFBF0] -> 0xED27
+                [0xFBF4] -> 0xED49
+                [0xFBF8] -> 0xED58
+                [0xFBFC] -> 0xED72
+                [0xFC14] -> 0xED81
+                [0xFC18] -> 0xEDA7
+                [0xFC1C] -> 0xEEC2
+                [0xFC20] -> 0xEFFC
+                [0xFC24] -> 0xF0BA
+                [0xFC28] -> 0xF163
+                [0xFFEA] -> 0xC0B4
+                [0xFFEC] -> 0xC0B0
+                [0xFFEE] -> 0xC0B8
+                [0xFFF0] -> 0xC094
+                [0xFFF2] -> 0xC046
+                [0xFFF8] -> 0xC09B
+                [0xFFFE] -> 0xC000
+
+Compiling Indirect Data Table as specified in Control File...
+        0 Indirect Data Vectors
+
+
+Pass 1 - Finding Code, Data, and Labels...
+LBD57  LDB87  LDC89  LDD70  LDF41  LB853  LDFE9  LB064  LB019  LDFDF
+LDFF7  LEBD9  LF8EF  LF508  LF90B  LF5FB  LF815  LF532  LF52B  LF53A
+LF5F4  LF61C  LF624  LF62C  LF6AC  LF772  LF784  LF8A0  LF8BF  LF88C
+LF924  LF936  LF939  LC021  LBD0D  LB500  LB850  LC04D  LC093  LB008
+LC06B  LC07A  LBCD1  LC066  LD3F0  LC075  LD443  LB065  LC090  LC08B
+LD2F9  LD202  LCF99  LC0A0  LC0AD  LEE9E  LEEA4  LBD59  LC114  LB0DA
+LC0FC  LC136  LC147  LC0C6  LB060  LB0C2  LC16D  LC169  LB000  LC192
+LC1FF  LB380  LBD0C  LB480  LB852  LC22D  LBD5A  LB440  LB400  LB0DB
+LB06E  LB0DC  LB070  LB09C  LB09D  LB09E  LB09F  LB0A3  LB86D  LB86F
+LB84F  LC2EE  LF84C  LC2E5  LC2EC  LC298  LBBD9  LC2FB  LC302  LB86C
+LC315  LC31B  LC326  LC3AA  LC3A8  LC32F  LB300  LBCD0  LC3F9  LC406
+LB066  LC4A7  LC50D  LBD08  LC4C7  LC4E8  LC4E0  LC52A  LBD41  LB022
+LB023  LBD53  LBCCF  LC611  LC691  LBD4B  LC797  LC8BF  LC79E  LC7B5
+LC7C3  LC7BF  LBD43  LBD45  LBD47  LBD49  LBD4D  LBD4F  LBD51  LBD55
+LBC13  LBC14  LBC15  LBC16  LBC17  LBC18  LBC19  LBC1A  LBC1B  LBC1C
+LBC1D  LBC1E  LBC1F  LBC20  LBC21  LBC22  LBC23  LBC24  LBC25  LBC26
+LBC27  LBC28  LBC29  LBC2A  LBC2B  LBC2C  LBC2D  LBC2E  LB0C3  LB0C4
+LB807  LB05E  LC9EF  LC8C6  LC9ED  LC8CD  LC8E3  LC8DF  LC9EB  LB001
+LB002  LCA23  LCA37  LB004  LB074  LB079  LB07C  LCAF5  LCA98  LB580
+LCB4B  LCB41  LCB16  LB01D  LB01C  LB01A  LB01B  LCBF4  LB01F  LB01E
+LB020  LB021  LB0CB  LB0CC  LCC1E  LCCC1  LCCBB  LCC14  LB026  LCCCD
+LCE26  LCD26  LCD34  LCD77  LCDD4  LCD2A  LB00A  LCE52  LB005  LCE68
+LCE8B  LB006  LB007  LB003  LCE84  LCE89  LCEDA  LCED8  LCEB7  LCEBB
+LCECA  LCED6  LCEEE  LCF2E  LCF04  LCF02  LCEFB  LCF15  LCF0E  LCF27
+LB05C  LB069  LB06A  LB00C  LB00E  LCFC3  LCFB4  LCFD1  LCFE6  LCFEE
+LD070  LCFFD  LD002  LD010  LD015  LD023  LD028  LD036  LD03B  LD049
+LD04E  LD05C  LD061  LD0C7  LCFF1  LD080  LD082  LD08B  LD08D  LD096
+LD098  LD0A1  LD0A3  LD0AC  LD0AE  LD0B7  LD0B9  LD077  LD0FB  LD0EC
+LD109  LD11E  LD126  LD1A8  LD135  LD13A  LD148  LD14D  LD15B  LD160
+LD16E  LD173  LD181  LD186  LD194  LD199  LD1FF  LD129  LD1B8  LD1BA
+LD1C3  LD1C5  LD1CE  LD1D0  LD1D9  LD1DB  LD1E4  LD1E6  LD1EF  LD1F1
+LD1AF  LBD09  LD21B  LD2F5  LD213  LD26A  LD262  LD2B1  LD312  LD3EC
+LD30A  LD361  LD359  LD3A8  LD3FF  LD44F  LB851  LDA67  LD95A  LBD5B
+LBD5C  LD951  LDA73  LD992  LBD5D  LBD5E  LD989  LD9CA  LBD5F  LBD60
+LD9C1  LDA02  LBD61  LBD62  LD9F9  LDA3A  LBD63  LBD64  LDA31  LDA62
+LB200  LB280  LDA86  LDAB0  LDABC  LDB91  LDB99  LDC93  LBD40  LB061
+LDC80  LDC9B  LDD7A  LDD82  LDE26  LDE02  LDE1C  LDE0E  LDE1A  LDE2E
+LDF4B  LDEE7  LDEEC  LB89C  LDF11  LDF2D  LDF20  LDF4D  LDF7A  LDF67
+LDF6B  LDF5D  LE2FD  LE006  LE00F  LE015  LE02D  LE035  LE03C  LE05F
+LE055  LE06A  LB83D  LE090  LE082  LE08A  LE09F  LE0A8  LE0AE  LE0C0
+LE0C6  LE0D8  LE0DE  LE100  LE0F7  LE106  LE11B  LE123  LE129  LE13F
+LE202  LE149  LE153  LE1C3  LE17C  LE1B5  LE195  LE19A  LBD3E  LE1B3
+LE1FF  LE1DF  LE1EC  LE1F1  LE2A4  LE246  LBD34  LE223  LE228  LE252
+LE267  LE29E  LE27C  LE289  LE28E  LE2F9  LB05D  LB06B  LB0C7  LB871
+LB872  LB873  LB067  LB027  LB05F  LB0D9  LB805  LB0BF  LB0C5  LB0C1
+LB07F  LB080  LB082  LB083  LB084  LB085  LB087  LB088  LB08A  LB08B
+LB08D  LB090  LB092  LB095  LB097  LB098  LB08C  LB08F  LB091  LB094
+LE3E6  LE3DD  LE3F7  LE402  LE56F  LE418  LE42C  LE422  LE4CF  LE45A
+LE451  LE475  LE4CC  LE493  LE4B0  LE4FC  LE4F3  LE518  LE536  LE553
+LE57B  LE5B8  LE5A8  LE89C  LE5F7  LE5CB  LB84E  LE5EE  LE5FF  LE681
+LE67E  LE689  LE70D  LE6D0  LE715  LE89A  LE71F  LE7D8  LE762  LE7D5
+LE784  LE898  LE7E0  LE824  LE849  LE8AD  LBD30  LE8B5  LE8D5  LE8E3
+LE92D  LEA65  LE966  LE956  LE9A5  LE979  LE99C  LE9AD  LEA63  LE9FD
+LEA61  LEA11  LEA76  LEA7E  LEAB9  LEAD2  LEAE6  LEAFA  LEB4E  LEB4C
+LEB11  LEC63  LEC71  LEC87  LEC83  LB068  LED0A  LED0E  LED3E  LED46
+LED4D  LBD0B  LED99  LEDD4  LEDD2  LEDB1  LEDE3  LEDFA  LEE09  LBD31
+LBD32  LBD35  LEE3F  LEE28  LBD33  LEE96  LEE8D  LEE8B  LEE7C  LEE94
+LEE55  LEEEC  LEEDD  LEEFA  LEF0F  LEF17  LEF99  LEF26  LEF2B  LEF39
+LEF3E  LEF4C  LEF51  LEF5F  LEF64  LEF72  LEF77  LEF85  LEF8A  LEFF0
+LEF1A  LEFA9  LEFAB  LEFB4  LEFB6  LEFBF  LEFC1  LEFCA  LEFCC  LEFD5
+LEFD7  LEFE0  LEFE2  LEFA0  LF39F  LF024  LF03A  LF034  LF056  LF074
+LF6B3  LF732  LF0A5  LF3A1  LF0D4  LF138  LF0E4  LF122  LF384  LF130
+LF155  LF171  LF184  LBD0E  LBD12  LBD10  LB06C  LF1CA  LF1AA  LF1E8
+LF209  LF1A6  LF224  LBD14  LF234  L0013  LF263  LF278  LF28D  LF2A2
+LF2B7  LF2D2  LBD16  LF2C9  LF30D  LF2E3  LF2F1  LF2FF  LF33F  LF341
+LF35C  LF36E  LF377  LF382  LF3CC  LF3BC  LF3E3  LF3FA  LF4BE  LF436
+LF412  LF456  LF477  LF467  LF4CC  LF4EC  LF7CC  LF79C  LF47F  LF48B
+LF4C6  LF4A8  LF4C9  LF4B6  LF3C4  LF573  LF580  LF58D  LF59A  LF5A7
+LF5B4  LF5CA  LF5D7  LF5E3  LF5EB  LF67A  LF666  LF650  LF691  LF697
+LF6D4  LF6DE  LF706  LF6F2  LF71E  LF731  LF757  LF7DA  LF7ED  LF814
+LF7FF  LF8AE  LF8BE  LF8C7  LF8E5  LF8CE  LF951  LF95B  LF949  
+
+Pass 2 - Disassembling to Output File...
+
+
+Pass 3 - Creating Functions Output File...
+
+Disassembly Complete
