@@ -4,11 +4,17 @@ The avxv5pxx_6811_no_opt.patch patch file was created to remove the
 direct addressing mode optimization in the 6811 Assembler, as
 described in the M6811 Code-Seeking Disassembler documentation.
 
-To apply, unzip the av5p06.zip file.  On Linux, use:
-unzip -L av5p06.zip
+To apply, unzip the av5p06.zip file: 
 
+On Linux and Mac, use:
+unzip -L -a av5p06.zip
 From the folder you unzip to, run:
 patch -p1 < avxv5pxx_6811_no_opt.patch
+
+On Windows, use:
+unzip av5p06.zip
+From the folder you unzip to, run:
+patch -p1 < avxv5pxx_6811_no_opt_windows.patch
 
 This will update the AS6811 assembler to not optimize addresses
 in the 0x0000-0x00FF range to Direct (S_DIR) Addressing Mode
