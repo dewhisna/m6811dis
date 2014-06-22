@@ -117,7 +117,7 @@
 #define ComDelimE	""			// Comment End delimiter
 #define HexDelim	"0x"		// Hex. delimiter
 
-#define VERSION 0x114				// M6811 Disassembler Version number 1.20
+#define VERSION 0x200				// M6811 Disassembler Version number 2.00
 
 // ----------------------------------------------------------------------------
 //	CM6811Disassembler
