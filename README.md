@@ -1,9 +1,11 @@
 ![m6811dis logo](./programs/doc/6811chip.png)
 
+**This repository has been displaced by the newer and more functional [Generic Code-Seeking Diassembler with Fuzzy-Function Analyzer](https://github.com/dewhisna/gendasm), which has all of the same functionality of this disassembler, plus adds other processors (like the AVR family) and has a functioning Fuzzy-Function Analyzer.**
+
+
 Description
 -----------
 
-This repository has been displaced by the newer and more functional [Generic Code-Seeking Diassembler with Fuzzy-Function Analyzer](https://github.com/dewhisna/gendasm), which has all of the same functionality of this disassembler, plus adds other processors (like the AVR family) and has a functioning Fuzzy-Function Analyzer.
 
 The M6811 Code-Seeking Disassembler is a command-line tool that lets you enter known starting vectors for a given code image for the 6811 micro. It will disassemble the code and follow through branches to assist in the separation of code and data.
 
